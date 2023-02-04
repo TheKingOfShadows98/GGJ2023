@@ -19,8 +19,8 @@ public class Shooter : Spawner
         // If Current Time is more or iquals to the mark, reset Timer and Spawn Bullet
         if (Time.time >= timeToBullet)
         {
-            //Set the mark in "Dekay" times after.
-            timeToBullet = Time.deltaTime + delay;
+            //Set the mark in "Delay" times after.
+            timeToBullet = Time.time + delay;
             // Use The Spawner.Spawn to spawn a bullet.
             Spawn();
         }

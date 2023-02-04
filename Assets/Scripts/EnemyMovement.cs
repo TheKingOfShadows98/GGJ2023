@@ -10,7 +10,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position += Vector3.right * speed * Time.deltaTime;
+        transform.Translate(Vector3.right * speed * Time.deltaTime);
     }
 
 }
