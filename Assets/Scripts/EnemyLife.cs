@@ -22,6 +22,7 @@ public class EnemyLife : MonoBehaviour
         if(other.gameObject.CompareTag("Arrow")){
             gameObject.SetActive(false);
             other.gameObject.SetActive(false);
+            FindObjectOfType<ScoreSystem>().addPoints(1000);
         }
         if(other.gameObject.CompareTag("Player")){
             Debug.Log("YOU LOSE");
