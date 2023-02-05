@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Timer : MonoBehaviour
-{
+public class Timer{
     public float delay;
     public float NextTime;
     public bool isactive;
-    public Timer(int time = 0, bool active = false)
+    public Timer(float time = 0, bool active = false)
     {
         delay = time;
         isactive = active;

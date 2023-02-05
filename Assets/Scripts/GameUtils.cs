@@ -27,6 +27,7 @@ public class GameUtils : MonoBehaviour
     }
 
     public void RestartGame(){
+        EndMenu.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 

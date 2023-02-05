@@ -6,10 +6,11 @@ public class SpawnerMovement : MonoBehaviour
 {
     LanesData lanesData;
     int currentLane = 0;
+    Timer timer = new Timer(1f);
     private void Start()
     {
         lanesData = FindObjectOfType<LanesData>();
-
+        timer.Play();
     }
     private void Update()
     {
@@ -17,10 +18,10 @@ public class SpawnerMovement : MonoBehaviour
         newPosition.y = lanesData.GetLineHeight(currentLane);
         transform.position = newPosition;
 
-        if (false)
+        if (timer.IsDone(true))
         {
             int l = Random.Range(0, lanesData.getNumLanes());
-            currentLane = currentLane >= lanesData.getNumLanes() ? lanesData.getNumLanes() - 1 : currentLane < 0 ? 0 : currentLane;
+            currentLane = l;
         }
     }
 }
