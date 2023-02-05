@@ -25,5 +25,6 @@ public class PlayerShooter : MonoBehaviour
             Arrow.transform.position = transform.position;
             Arrow.SetActive(Arrow);
         }
+        
     }
 }

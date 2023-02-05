@@ -101,7 +101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f49adcfe08e2740b84ab8801bfbb31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene: Lose
   children: {fileID: 4486783366042494776}
   sound: {fileID: 8300000, guid: 5d2f84840f9db2542a2a3ba331ea3ac6, type: 3}
 --- !u!114 &10400850982240119
@@ -116,9 +115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edab2c661ff7db045b563f1b9eb12802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
-  max: 80
-  min: 50
+  speed: 5
+  max: 10
+  min: 5
 --- !u!61 &-1290326968633253175
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -164,7 +163,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 7
 --- !u!1 &4486783366042494776
 GameObject:

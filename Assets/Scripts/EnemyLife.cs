@@ -1,10 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class EnemyLife : MonoBehaviour
 {
 
-    public string Scene;
     public GameObject children;
     public AudioClip sound;
     private AudioSource audioSource;
@@ -31,8 +32,8 @@ public class EnemyLife : MonoBehaviour
         }
         if(other.gameObject.CompareTag("Player")){
             Debug.Log("YOU LOSE");
+            FindObjectOfType<GameUtils>().EndGame();
             Time.timeScale = 0;
-            SceneManager.LoadScene(Scene);
         }
 
     }
